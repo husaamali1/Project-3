@@ -1,0 +1,122 @@
+export default [
+  {
+    make: 'BMW',
+    model: 'M5 competiton',
+    year: 2023,
+    origin: 'Germany',
+  },
+  {
+    make: 'Audi',
+    model: 'RS3',
+    year: 2021,
+    origin: 'Germany',
+  },
+  {
+    make: 'Mercedes',
+    model: 'C63',
+    year: 2022,
+    origin: 'Germany',
+  },
+  {
+    make: 'Toyota',
+    model: 'Corrola',
+    year: 2021,
+    origin: 'Japan',
+  },
+  {
+    make: 'Seat',
+    model: 'Leon FR',
+    year: 2020,
+    origin: 'Spain',
+  },
+  {
+    make: 'Volkswagen',
+    model: 'Golf T-ROC',
+    year: 2023,
+    origin: 'Germany',
+  },
+  {
+    make: 'Ford',
+    model: 'Focus',
+    year: 2017,
+    origin: 'USA',
+  },
+  {
+    make: 'Vauxhall',
+    model: 'Astra',
+    year: 2016,
+    origin: 'UK',
+  },
+  {
+    make: 'Range Rover',
+    model: 'Sports',
+    year: 2017,
+    origin: 'UK',
+  },
+  {
+    make: 'Mini Cooper',
+    model: 'Cooper S',
+    year: 2022,
+    origin: 'UK',
+  },
+  {
+    make: 'Mercedes',
+    model: 'G Wagon',
+    year: 2023,
+    origin: 'Germany',
+  },
+  {
+    make: 'BMW',
+    model: '3 Series',
+    year: 2020,
+    origin: 'Germany',
+  },
+  {
+    make: 'Toyota',
+    model: 'CHR',
+    year: 2017,
+    origin: 'Japan',
+  },
+  {
+    make: 'Nisaan',
+    model: 'Juke',
+    year: 2018,
+    origin: 'Japan',
+  },
+  {
+    make: 'Mercedes',
+    model: 'S Class',
+    year: 2015,
+    origin: 'Germany',
+  },
+  {
+    make: 'Tesla',
+    model: 'Model Y',
+    year: 2022,
+    origin: 'USA',
+  },
+  {
+    make: 'porsche',
+    model: 'Cayenne GT',
+    year: 2024,
+    origin: 'Germany',
+  },
+  {
+    make: 'Mercedes',
+    model: 'E63 S',
+    year: 2023,
+    origin: 'Germany',
+  },
+  {
+    make: 'Land rover',
+    model: 'Defender',
+    year: 2022,
+    origin: 'UK',
+  },
+  {
+    make: 'Porsche',
+    model: 'Taycan',
+    year: 2023,
+    origin: 'Germany',
+  }
+]
