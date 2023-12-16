@@ -16,5 +16,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off' //this disables the prop error
   },
 }
+
+

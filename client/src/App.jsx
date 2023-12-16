@@ -1,25 +1,20 @@
 // * Imports
-import { useEffect } from 'react'
-import axios from 'axios'
+import { Outlet } from 'react-router-dom'
+
+// ? Components
+import Nav from './component/Nav'
+import Footer from './component/Footer'
 
 
 function App() {
 
-  useEffect(() => {
-    async function getCarData() {
-      try {
-        const { data } = await axios.get('/api/cars')
-        console.log(data)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    getCarData()
-  }, [])
-
   return (
     <>
-    <h1>Hello world</h1>
+    <Nav />
+    <main>
+    <Outlet />
+    </main>
+    <Footer />
     </>
   )
 }

@@ -21,7 +21,7 @@ export const login = async (req, res) => {
     if (!userToLogin || !bcrypt.compareSync(req.body.password, userToLogin.password)){
       throw new Error(!userToLogin ? 'Email doesn\'t exist' : 'password don\'t match')
     }
-    const token = jwt.sign({ sub: userToLogin._id }, process.env.SECRET)
+    const token = jwt.sign({ sub: userToLogin._id }, process.env.SECRET, { expiresIn: '10d' })
     return res.json({ message: `Welcome back ${userToLogin.username}`, token: token })
   } catch (error) {
     console.log(error)
@@ -34,6 +34,7 @@ export const login = async (req, res) => {
 // Path: /portfolio
 export const getPortfolio = async (req, res) => {
   try {
+    // console.log(req.currentUser)
     const portfolio = await User.findById(req.currentUser._id).populate('carsCreated')
     return res.json(portfolio)
   } catch (error) {

@@ -14,10 +14,7 @@ const router = express.Router()
 
 // * Cars
 router.route('/cars')
-  .get(secureRoute, getAllCars)
-
-
-router.route('/cars/create')
+  .get(getAllCars)
   .post(secureRoute, createCar)
 
 
