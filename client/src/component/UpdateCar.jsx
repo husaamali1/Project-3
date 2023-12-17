@@ -1,5 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Form, useActionData, useLoaderData, useNavigate } from 'react-router-dom'
+
+// compoenent
+import ImageUpload from './ImageUplod'
 
 export default function UpdateCar(){
 const res = useActionData()
@@ -9,11 +12,13 @@ console.log(car)
 const { id } = car
 useEffect(() => {
   console.log(res)
-  if ( res?.status ===200){
+  if ( res?.status === 200){
     console.log('Created successfully!')
     navigate(`/cars/${id}`)
   }
 }, [res, id, navigate])
+
+const [ image, setImage ] = useState(car.image)
 
 
   return (
@@ -32,8 +37,7 @@ useEffect(() => {
         <input type="text" name="price" placeholder='Price' defaultValue={car.price}/>
         <label hidden htmlFor="description">Description</label>
         <textarea name="description" placeholder='Description' defaultValue={car.description}></textarea>
-        <label hidden htmlFor="image">Image</label>
-        <input type="text" name="image" placeholder='Image' defaultValue={car.image}/>
+        <ImageUpload image={image} setImage={setImage} />
         {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>}
         {/* <Link to={`/cars/${id}`}> */}
         <button className="btn btn-secondary" type="submit">Edit</button>

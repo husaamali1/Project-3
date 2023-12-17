@@ -1,9 +1,12 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Form, useActionData, useNavigate } from 'react-router-dom'
+import ImageUpload from './ImageUplod'
 
 export default function Carcreate() {
   const res = useActionData()
   const navigate = useNavigate()
+
+  const [ image, setImage ] = useState('')
 
   useEffect(() => {
     console.log(res)
@@ -29,8 +32,7 @@ export default function Carcreate() {
         <input type="number" name="price" placeholder='Price' />
         <label hidden htmlFor="description">Description</label>
         <textarea name="description" placeholder='Description'></textarea>
-        <label hidden htmlFor="image">Image</label>
-        <input type="text" name="image" placeholder='Image' />
+       <ImageUpload image={image} setImage={setImage} />
         {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>}
         <button className="btn btn-outline-secondary" type="submit">Create</button>
       </Form>
