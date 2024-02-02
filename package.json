@@ -6,13 +6,16 @@
   "scripts": {
     "serve": "npx nodemon index.js",
     "seed": "node db/seeds.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm i --only=dev && npm i && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@vitejs/plugin-react-swc": "^3.6.0",
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.2",
     "dotenv": "^16.3.1",
@@ -21,6 +24,7 @@
     "mongoose": "^8.0.3",
     "react": "^18.2.0",
     "react-router-dom": "^6.20.1",
-    "seeds": "^2.3.1"
+    "seeds": "^2.3.1",
+    "vite": "^5.0.12"
   }
 }
