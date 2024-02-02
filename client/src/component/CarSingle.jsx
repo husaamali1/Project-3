@@ -1,7 +1,7 @@
 import { useLoaderData, Link, useActionData, useNavigate, Form } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import ImageUpload from './ImageUplod'
-import { activeUser, removeToken } from '../utils/helpers/common'
+import { activeUser } from '../utils/helpers/common'
 
 export default function CarSingle() {
   const car = useLoaderData()
