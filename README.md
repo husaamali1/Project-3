@@ -85,7 +85,7 @@ The most intriguing challenges I encountered involved resolving the 401 and 404 
 ## Key Learnings
 This project provided an incredible learning experience, and I gained extensive knowledge. Working on it alone allowed me to enhance my problem-solving skills, plan comprehensively, and significantly boosted my confidence in full-stack development. Initially, I had doubts about completing it independently, but I successfully finished the project. While there are several features, such as image implementation, that I would have liked to include but couldn't, it's something I plan to address in the future. I used this project as a means to overcome daily challenges, putting in maximum effort. When faced with difficulties, I made sure to give my best and sought support when needed.
 
-## Known Bugs
+## Current Bugs
 I've identified a bug in my webpage where the edit and delete buttons are not hidden for users who are not the owners. This is the only known bug to my knowledge at the moment.
 
 ## Future Improvements
