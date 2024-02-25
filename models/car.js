@@ -12,9 +12,6 @@ const carSchema = new mongoose.Schema({
   owner: { type: mongoose.ObjectId, ref: 'User', required: true },
 })
 
-
-
-
 // * Virtuals
 carSchema
   .set('toJSON', {

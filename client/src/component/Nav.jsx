@@ -17,7 +17,7 @@ function logOut() {
     removeToken()
     navigate('/login')
   }
-
+  
   return (
     <>
       <header className=' navbar p-2 p-md-3 p-lg-4'>
