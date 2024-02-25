@@ -4,7 +4,7 @@
 My website Infinite Wheels functions as an online car shop. Here, you can explore a diverse range of cars, read detailed information about each one, and navigate easily. The design is kept simple with the inclusion of pictures (not yet implemented) and user-friendly clicks, making the process of buying or selling a car effortless. Infinite Wheels serves as a meeting place for car enthusiasts, providing a platform to connect and facilitate easy transactions.
 
 ## Deployment
-Access Infinite Wheels at [Infinite Wheels](https://infinite-wheels-b5e907416190.herokuapp.com/).
+Access Infinite Wheels at [https://infinite-wheels-b5e907416190.herokuapp.com/](https://infinite-wheels-b5e907416190.herokuapp.com/).
 
 ## Technologies Used
 - **Frontend:** React
